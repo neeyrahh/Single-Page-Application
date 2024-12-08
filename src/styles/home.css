@@ -1,13 +1,143 @@
 .home {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .home h1 {
-    color: var(--primary-color);
-  }
-  
-  .home p {
-    color: var(--secondary-color);
-  }
-  
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background: url("../assets/hero-image.png") no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-banner h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background-color: #a02820;
+}
+
+/* Specialties Section */
+.specialties {
+  text-align: center;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.specialty-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.specialty-item {
+  width: 30%;
+  text-align: center;
+}
+
+.specialty-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.specialty-item h3 {
+  font-size: 1.6em;
+  color: #c0392b;
+  margin-top: 15px;
+}
+
+.specialty-item p {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+}
+
+.why-choose-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.why-choose-us p {
+  font-size: 1.3em;
+  color: #555;
+}
+
+.testimonials {
+  text-align: center;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  width: 30%;
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.testimonial-item span {
+  font-size: 1.1em;
+  color: #c0392b;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}

@@ -1,15 +1,27 @@
 .header {
-  background-color: #c0392b;
-  color: white;
-  padding: 10px;
+  /* background-color: #c0392b; */
+  color: #c0392b;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the header stays above other elements */
+  background-color: white; /* Set a background color to avoid transparency issues */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for visual effect */
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+}
+
+button.nav-link {
+  border: none;
+  background: no-repeat;
+  color: #0b0706;
+  padding-bottom: 2px;
 }
 
 .nav {
@@ -20,9 +32,14 @@
 .nav-link {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
+
+button.nav-link:hover {
+  color:#c0392b;
+}
+
+html {
+  scroll-behavior: smooth;
 }

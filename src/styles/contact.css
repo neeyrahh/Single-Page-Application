@@ -33,3 +33,7 @@
 .contact-form button:hover {
   background-color: #a02820;
 }
+
+html {
+  scroll-behavior: smooth;
+}

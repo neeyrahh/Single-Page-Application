@@ -5,8 +5,10 @@ const About = () => {
   return (
     <div className="about" id="about">
       <div className="about-hero">
-        <h1>Welcome to Gourmet Paradise</h1>
-        <p>Where Culinary Art Meets Unforgettable Hospitality</p>
+        <div className="text-container">
+          <h1>Welcome to Gourmet Paradise</h1>
+          <p>Where Culinary Art Meets Unforgettable Hospitality</p>
+        </div>
       </div>
       <section className="about-content">
         <h2>Our Story</h2>
